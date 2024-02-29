@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Card from "./components/Card";
+import Card from "./Components/Card";
 import Form from "./Components/Form";
-import "./App.css";
+import "./Styles/App.css";
 
 function App() {
   const [count, setCount] = useState(0);

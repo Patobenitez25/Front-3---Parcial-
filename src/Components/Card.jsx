@@ -1,7 +1,9 @@
 import React from "react";
+/* import CardStyles from '../Styles/Card.module.css' */
 
-const Card = () => {
-  return <div>Hola, soy una tarjeta</div>;
+const Card = (props) => {
+  console.log(props)
+  return <div>props.usuario</div>;
 };
 
 export default Card;
