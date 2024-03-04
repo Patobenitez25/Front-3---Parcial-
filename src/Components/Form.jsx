@@ -12,13 +12,13 @@ const Form = () => {
     const [err, setErr] = useState(false)
 
     const handleSubmit = (event) => {
-      event.preventDefault()
-      if(usuario.nombre.trim().length >= 3 && usuario.libroFavorito.length >= 6 ){
-          setErr(false)
-      } else {
-          setErr(true)
-      }
-  }
+        event.preventDefault()
+        if(usuario.nombre.trim().length >= 3 && usuario.libroFavorito.length >= 6 ){
+            setErr(false)
+        } else {
+            setErr(true)
+        }
+    }
 
     /* const [show, setShow] = useState(false)
     const [err, setErr] = useState(false) */
@@ -33,7 +33,9 @@ const Form = () => {
                 <input type="text" onBlur={(event) => setUsuario({...usuario, libroFavorito: event.target.value})} />
                 <button type= "submit">Enviar</button>
             </form>
-        {err ? <p style={{color: 'red'}}>“Por favor chequea que la información sea correcta”.</p> : null}
+        {err ? <p style={{color: 'red'}}>“Por favor chequea que la información sea correcta”.</p> : 
+            <Card nombre={usuario.nombre} libroFavorito={usuario.libroFavorito}/>
+        }
         </div>
     )
 }

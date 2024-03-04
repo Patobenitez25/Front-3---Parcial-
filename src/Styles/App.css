@@ -56,7 +56,7 @@
   object-fit: cover;
 }
 .cardContainer h3{
-  color: white;
+  color: rgb(0, 0, 0);
   text-shadow: 5px 5px 5px black;
 }
 
@@ -68,15 +68,25 @@ form{
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
+  flex-direction: column;
   height: 25rem;
   width: 50rem;
-  flex-direction: column;
   font-size: 2rem;
   border: 1px solid #FFFF;
+  background-color: grey;
   
+}
+label{
+  color: black;
 }
 input{
   border-radius: 3rem;
   width: 25rem;
   margin: 0 auto 2rem;
+}
+.card{
+  border: 1px solid #FFFF;
+  margin: 0 auto;
+  margin-top: 5rem;
+  max-width: 15rem;
 }

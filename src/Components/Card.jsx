@@ -3,7 +3,9 @@ import React from "react";
 
 const Card = (props) => {
   console.log(props)
-  return <div>props.usuario</div>;
+  return <div className="card">
+    <p>Hola, {props.nombre}. Ya sabemos que tu libro favorito es {props.libroFavorito}</p>
+  </div>;
 };
 
 export default Card;
